@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "golosimod:lemon"
+    }
+  ],
+  "result":
+  {
+    "item": "golosimod:lemon_candy",
+    "count": 4
+  }
+}

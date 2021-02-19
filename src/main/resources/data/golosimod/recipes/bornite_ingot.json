@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bbb",
+    "ddd",
+    "bbb"
+  ],
+  "key":
+  {
+    "b":
+    {
+      "item": "golosimod:bornite"
+    },
+    "d":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:bornite_ingot",
+    "count": 1
+  }
+}

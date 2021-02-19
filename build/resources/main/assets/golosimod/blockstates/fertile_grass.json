@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "golosimod:block/fertile_grass" },
+    "facing=south": { "model": "golosimod:block/fertile_grass", "y":  180},
+    "facing=west": { "model": "golosimod:block/fertile_grass", "y":  270},
+    "facing=east": { "model": "golosimod:block/fertile_grass", "y":  90}
+  }
+}

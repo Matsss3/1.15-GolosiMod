@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "l  ",
+    "ll ",
+    "lll"
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:lemon_tree_planks"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:lemon_stairs",
+    "count": 4
+  }
+}

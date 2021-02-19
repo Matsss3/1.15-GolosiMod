@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:mortar",
+	"output": {
+		"item": "golosimod:salt"
+	},
+	
+	"input": {
+		"item": "golosimod:salt_block"
+	}
+}

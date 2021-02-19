@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "golosimod:block/lemon_slab" },
+        "type=top": { "model": "golosimod:block/lemon_slab_top" },
+        "type=double": { "model": "golosimod:block/lemon_planks" }
+    }
+}

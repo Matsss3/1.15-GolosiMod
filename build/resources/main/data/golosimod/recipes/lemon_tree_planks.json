@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "golosimod:lemon_tree_log"
+    }
+  ],
+  "result":
+  {
+    "item": "golosimod:lemon_tree_planks",
+    "count": 4
+  }
+}

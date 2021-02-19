@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:jungle_leaves",
+    "minecraft:oak_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:dark_oak_leaves",
+    "minecraft:acacia_leaves",
+    "minecraft:birch_leaves",
+    "golosimod:lemon_tree_leaves",
+    "golosimod:chocolate_tree_leaves"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "minecraft:cooked_mutton"
+	},
+	
+	"input": {
+		"item": "minecraft:mutton"
+	}
+}

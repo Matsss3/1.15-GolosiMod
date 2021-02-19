@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "minecraft:dried_kelp"
+	},
+	
+	"input": {
+		"item": "minecraft:kelp"
+	}
+}

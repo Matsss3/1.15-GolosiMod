@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lava",
+    "minecraft:flowing_lava",
+    "golosimod:frying_oil_fluid",
+    "golosimod:frying_oil_flowing"
+  ]
+}

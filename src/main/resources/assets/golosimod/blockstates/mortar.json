@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "golosimod:block/mortar" },
+    "facing=south": { "model": "golosimod:block/mortar", "y":  180},
+    "facing=west": { "model": "golosimod:block/mortar", "y":  270},
+    "facing=east": { "model": "golosimod:block/mortar", "y":  90}
+  }
+}

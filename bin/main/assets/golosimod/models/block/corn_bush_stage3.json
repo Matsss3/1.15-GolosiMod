@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "golosimod:blocks/corn_bush_stage3"
+    }
+}

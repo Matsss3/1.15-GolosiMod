@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "golosimod:white_chocolate_block"
+    }
+  ],
+  "result":
+  {
+    "item": "golosimod:white_chocolate_cacao_block",
+    "count": 1
+  }
+}

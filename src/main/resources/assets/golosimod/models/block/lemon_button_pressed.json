@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_pressed",
+    "textures": {
+        "texture": "golosimod:blocks/lemon_tree_planks"
+    }
+}

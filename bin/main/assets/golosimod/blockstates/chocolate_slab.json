@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "golosimod:block/chocolate_slab" },
+        "type=top": { "model": "golosimod:block/chocolate_slab_top" },
+        "type=double": { "model": "golosimod:block/chocolate_planks" }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " cc",
+    " cc"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "golosimod:chocolate"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:chocolate_block",
+    "count": 1
+  }
+}

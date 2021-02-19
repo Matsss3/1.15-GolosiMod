@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "lll",
+    "l l",
+    "l l"
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:limonite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:limonite_leggings",
+    "count": 1
+  }
+}

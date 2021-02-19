@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "golosimod:block/lemon_tree_log" },
+        "axis=z":   { "model": "golosimod:block/lemon_tree_log", "x": 90 },
+        "axis=x":   { "model": "golosimod:block/lemon_tree_log", "x": 90, "y": 90 }
+    }
+}

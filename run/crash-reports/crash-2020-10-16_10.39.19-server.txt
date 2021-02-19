@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 16/10/20 10:39
+Description: Ticking block entity
+
+java.lang.ClassCastException: com.matsss2.golosimod.recipes.OvenRecipe cannot be cast to com.matsss2.golosimod.recipes.MortarRecipe
+	at com.matsss2.golosimod.tileentity.MortarTileEntity.getRecipe(MortarTileEntity.java:139) ~[?:?] {re:classloading}
+	at com.matsss2.golosimod.tileentity.MortarTileEntity.tick(MortarTileEntity.java:71) ~[?:?] {re:classloading}
+	at net.minecraft.world.World.tickBlockEntities(World.java:523) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:884) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:660) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_261] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.matsss2.golosimod.tileentity.MortarTileEntity.getRecipe(MortarTileEntity.java:139)
+	at com.matsss2.golosimod.tileentity.MortarTileEntity.tick(MortarTileEntity.java:71)
+
+-- Block entity being ticked --
+Details:
+	Name: golosimod:mortar // com.matsss2.golosimod.tileentity.MortarTileEntity
+	Block: Block{golosimod:mortar}[facing=east]
+	Block location: World: (-74,74,-206), Chunk: (at 6,4,2 in -5,-13; contains blocks -80,0,-208 to -65,255,-193), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Block: Block{golosimod:mortar}[facing=east]
+	Block location: World: (-74,74,-206), Chunk: (at 6,4,2 in -5,-13; contains blocks -80,0,-208 to -65,255,-193), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+Stacktrace:
+	at net.minecraft.world.World.tickBlockEntities(World.java:523)
+	at net.minecraft.world.server.ServerWorld.tick(ServerWorld.java:371)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/35, l='GMTW 16', x=-72.70, y=73.00, z=-205.69]]
+	Chunk stats: ServerChunkCache: 2428
+	Level dimension: DimensionType{minecraft:overworld}
+	Level name: GMTW 16
+	Level seed: 7375777452741225447
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (-16,74,-160), Chunk: (at 0,4,0 in -1,-10; contains blocks -16,0,-160 to -1,255,-145), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 1985 game time, 1985 day time
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 116275 (now: false), thunder time: 30642 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:884)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:660)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_261, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 549472488 bytes (524 MB) / 1019215872 bytes (972 MB) up to 1774714880 bytes (1692 MB)
+	CPUs: 4
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 5.0.0-milestone.4+67+b1a340b
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.0.0-milestone.1-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.0.0-milestone.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.1
+	Forge: net.minecraftforge:31.1.0
+	FML Language Providers: 
+		javafml@31.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 DONE}
+		forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-recomp.jar Forge {forge@31.1.0 DONE}
+		main Golosi Mod {golosimod@1.0 DONE}
+		forge-1.15.2-geckolib-2.0.0_mapped_snapshot_20200923-1.15.1.jar Geckolib {geckolib@2.0.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/35, l='GMTW 16', x=-72.70, y=73.00, z=-205.69]]
+	Data Packs: vanilla, mod:forge (incompatible), mod:geckolib, mod:golosimod
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

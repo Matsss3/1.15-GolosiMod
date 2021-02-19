@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " b ",
+    "bnb",
+    " b "
+  ],
+  "key":
+  {
+    "n":
+    {
+      "item": "minecraft:diamond_leggings"
+    },
+    "b":
+    {
+      "item": "golosimod:bornite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:bornite_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ibi",
+    "bcb",
+    "sls"
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "c":
+    {
+      "item": "minecraft:campfire"
+    },
+    "s":
+    {
+      "item": "minecraft:smooth_stone"
+    },
+    "b":
+    {
+      "item": "golosimod:bornite"
+    },
+    "l":
+    {
+      "item": "golosimod:bornite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:oven",
+    "count": 1
+  }
+}

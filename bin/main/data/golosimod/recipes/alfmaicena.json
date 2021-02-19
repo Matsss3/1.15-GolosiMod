@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ccc",
+    "dsd",
+    "ccc"
+  ],
+  "key":
+  {
+    "d":
+    {
+      "item": "golosimod:dleche"
+    },
+    "c":
+    {
+      "item": "golosimod:corn"
+    },
+    "s":
+    {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:alfmaicena",
+    "count": 2
+  }
+}

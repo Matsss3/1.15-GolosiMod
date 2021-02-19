@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "golosimod:blocks/lemon_sapling"
+    }
+}

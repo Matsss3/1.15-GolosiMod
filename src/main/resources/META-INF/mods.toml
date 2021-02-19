@@ -1,0 +1,50 @@
+modLoader="javafml"
+
+loaderVersion="[31,)"
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="golosimod"
+
+version="1.0"
+
+displayName="Golosi Mod"
+
+updateJSONURL="https://www.curseforge.com/minecraft/mc-mods/golosimod"
+
+displayURL="https://www.curseforge.com/minecraft/mc-mods/golosimod"
+
+logoFile="examplemod.png"
+
+credits="Credits to ElAlfonsin123, valenva, ElWollycMami, pedrolo2006, Wqit and Secrect_Grego"
+
+authors="Matsss2"
+
+description='''
+	A little bit of an... uncommon... mod about food and much more things.
+'''
+
+
+
+
+
+[[dependencies.golosimod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[31,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+    
+[[dependencies.golosimod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

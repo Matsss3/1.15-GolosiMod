@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "golosimod:bdleche"
+	},
+	
+	"input": {
+		"item": "minecraft:milk_bucket"
+	}
+}

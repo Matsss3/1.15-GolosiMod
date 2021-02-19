@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "   ",
+    "ll "
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:lemon_tree_planks"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:lemon_pressure_plate",
+    "count": 2
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "minecraft:sugar"
+	},
+	
+	"input": {
+		"item": "golosimod:coke_bucket"
+	}
+}

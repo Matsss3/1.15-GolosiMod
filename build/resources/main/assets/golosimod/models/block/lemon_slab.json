@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "golosimod:blocks/lemon_tree_planks",
+        "top": "golosimod:blocks/lemon_tree_planks",
+        "side": "golosimod:blocks/lemon_tree_planks"
+    }
+}

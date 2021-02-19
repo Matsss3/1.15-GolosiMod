@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "golosimod:limonite_ingot"
+	},
+	
+	"input": {
+		"item": "golosimod:limonite"
+	}
+}

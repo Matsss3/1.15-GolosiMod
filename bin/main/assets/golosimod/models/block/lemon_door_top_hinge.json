@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "golosimod:blocks/lemon_door_bottom",
+        "top": "golosimod:blocks/lemon_door_top"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "golosimod:blocks/chocolate_tree_planks",
+        "top": "golosimod:blocks/chocolate_tree_planks",
+        "side": "golosimod:blocks/chocolate_tree_planks"
+    }
+}

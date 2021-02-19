@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ll ",
+    "ls ",
+    " s "
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:limonite_ingot"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:limonite_axe",
+    "count": 1
+  }
+}

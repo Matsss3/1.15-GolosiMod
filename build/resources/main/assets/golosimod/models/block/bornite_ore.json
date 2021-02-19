@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "golosimod:blocks/bornite_ore"
+  }
+}

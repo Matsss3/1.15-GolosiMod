@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "minecraft:baked_potato"
+	},
+	
+	"input": {
+		"item": "minecraft:potato"
+	}
+}

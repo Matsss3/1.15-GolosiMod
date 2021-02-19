@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_inventory",
+    "textures": {
+        "texture": "golosimod:block/lemon_tree_planks"
+    }
+}

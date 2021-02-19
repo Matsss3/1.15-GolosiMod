@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "lbl",
+    "bcb",
+    "lbl"
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:limonite_block"
+    },
+    "b":
+    {
+      "item": "golosimod:bornite_ingot"
+    },
+    "c":
+    {
+      "item": "golosimod:chocolate"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:golosi_portal",
+    "count": 1
+  }
+}

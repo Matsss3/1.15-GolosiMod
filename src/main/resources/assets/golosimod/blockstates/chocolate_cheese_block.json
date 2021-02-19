@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "golosimod:block/chocolate_cheese_block" },
+    "facing=south": { "model": "golosimod:block/chocolate_cheese_block", "y":  180},
+    "facing=west": { "model": "golosimod:block/chocolate_cheese_block", "y":  270},
+    "facing=east": { "model": "golosimod:block/chocolate_cheese_block", "y":  90}
+  }
+}

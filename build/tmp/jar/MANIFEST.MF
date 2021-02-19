@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: 1.15 GolosiMod
+Implementation-Version: 1.0
+Specification-Vendor: examplemodsareus
+Specification-Title: examplemod
+Implementation-Timestamp: 2021-02-07T22:19:15-0300
+Specification-Version: 1
+Implementation-Vendor: examplemodsareus
+

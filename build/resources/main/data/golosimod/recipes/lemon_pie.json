@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ele",
+    "lsl",
+    "www"
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:lemon"
+    },
+    "w":
+    {
+      "item": "minecraft:wheat"
+    },
+    "s":
+    {
+      "item": "minecraft:sugar"
+    },
+    "e":
+    {
+      "item": "minecraft:egg"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:lemon_pie",
+    "count": 1
+  }
+}

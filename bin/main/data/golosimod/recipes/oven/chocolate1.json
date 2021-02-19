@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:oven",
+	"output": {
+		"item": "golosimod:chocolate"
+	},
+	
+	"input": {
+		"item": "golosimod:chocolate_block"
+	}
+}

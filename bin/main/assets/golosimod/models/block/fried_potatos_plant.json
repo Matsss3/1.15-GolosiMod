@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "golosimod:blocks/fried_potatos_plant"
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "lsl",
+    "lsl",
+    "   "
+  ],
+  "key":
+  {
+    "l":
+    {
+      "item": "golosimod:lemon_tree_planks"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "golosimod:lemon_fence",
+    "count": 3
+  }
+}

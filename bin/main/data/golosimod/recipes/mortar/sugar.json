@@ -1,0 +1,10 @@
+{
+	"type": "golosimod:mortar",
+	"output": {
+		"item": "minecraft:sugar"
+	},
+	
+	"input": {
+		"item": "golosimod:sugared_stone"
+	}
+}

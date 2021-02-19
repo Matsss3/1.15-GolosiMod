@@ -1,0 +1,115 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 12/10/20 12:05
+Description: Exception generating new chunk
+
+java.lang.NullPointerException: Exception generating new chunk
+	at net.minecraft.world.gen.ChunkGenerator.generateStructureStarts(ChunkGenerator.java:189) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$3(ChunkStatus.java:52) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.chunk.ChunkStatus$ISelectiveWorker.doWork(ChunkStatus.java:241) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.doGenerationWork(ChunkStatus.java:195) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:536) ~[?:?] {re:classloading}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-2.0.24.jar:?] {}
+	at net.minecraft.world.server.ChunkManager.lambda$chunkGenerate$20(ChunkManager.java:534) ~[?:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture.uniCompose(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_261] {}
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.lambda$null$1(ChunkTaskPriorityQueueSorter.java:44) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveOne(DelegatedTaskExecutor.java:83) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveWhile(DelegatedTaskExecutor.java:123) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.run(DelegatedTaskExecutor.java:91) ~[?:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:1.8.0_261] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:1.8.0_261] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.gen.ChunkGenerator.generateStructureStarts(ChunkGenerator.java:189)
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$3(ChunkStatus.java:52)
+	at net.minecraft.world.chunk.ChunkStatus$ISelectiveWorker.doWork(ChunkStatus.java:241)
+	at net.minecraft.world.chunk.ChunkStatus.doGenerationWork(ChunkStatus.java:195)
+
+-- Chunk to be generated --
+Details:
+	Location: 17,-24
+	Position hash: -103079215087
+	Generator: com.matsss2.golosimod.world.dimension.GolosiChunkGenerator@5eeaf9a4
+Stacktrace:
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:536)
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+	at net.minecraft.world.server.ChunkManager.lambda$chunkGenerate$20(ChunkManager.java:534)
+	at java.util.concurrent.CompletableFuture.uniCompose(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.lambda$null$1(ChunkTaskPriorityQueueSorter.java:44)
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveOne(DelegatedTaskExecutor.java:83)
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.driveWhile(DelegatedTaskExecutor.java:123)
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.run(DelegatedTaskExecutor.java:91)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Dev'/15, l='GMTW 10', x=491.68, y=105.54, z=-163.42]]
+	Chunk stats: ServerChunkCache: 2573
+	Level dimension: DimensionType{golosimod:golosi_dimension}
+	Derived: true
+	Level name: GMTW 10
+	Level seed: 682017919725777027
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (173,68,-160), Chunk: (at 13,4,0 in 10,-10; contains blocks 160,0,-160 to 175,255,-145), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 9266 game time, 9266 day time
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 7831 (now: false), thunder time: 163747 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:887)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:120)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:660)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_261, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 466441136 bytes (444 MB) / 935329792 bytes (892 MB) up to 1774714880 bytes (1692 MB)
+	CPUs: 4
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 5.0.0-milestone.4+67+b1a340b
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.0.0-milestone.1-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.0.0-milestone.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.1
+	Forge: net.minecraftforge:31.1.0
+	FML Language Providers: 
+		javafml@31.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 DONE}
+		forge-1.15.2-31.1.0_mapped_snapshot_20200923-1.15.1-recomp.jar Forge {forge@31.1.0 DONE}
+		main Golosi Mod {golosimod@1.0 DONE}
+		forge-1.15.2-geckolib-2.0.0_mapped_snapshot_20200923-1.15.1.jar Geckolib {geckolib@2.0.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/15, l='GMTW 10', x=491.68, y=105.54, z=-163.42]]
+	Data Packs: vanilla, mod:forge (incompatible), mod:geckolib, mod:golosimod
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

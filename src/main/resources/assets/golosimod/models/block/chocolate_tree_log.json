@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "golosimod:blocks/chocolate_tree_log_top",
+        "side": "golosimod:blocks/chocolate_tree_log"
+    }
+}
